@@ -7,8 +7,8 @@
 
 .header{
     display: flex;
-    margin: 47px 0px 0px 42px;
-    margin-right: 32px;
+    margin-top: 32px;
+    margin-left: 42px;
     align-items: center;
 }
 .nav a{
@@ -40,26 +40,31 @@
 .image-logo img{
     width: 595.18px;
     height: 500px;
+    margin-top: 163px;
     margin-left: 121px;
-    margin-top: 246px;
-    margin-bottom: 103.9px;
+    margin-bottom: 102px;
 }
-.article{
-    margin-top: 342px;
-    width: 493px;
-}
+
 .article h1{
+    width: 582px;
+    height: 164px;
+    margin-top: 259px;
+    margin-right: 57px;
     font-size: 62px;
     font-weight: 700;
     line-height: 82px;
     color: #161A49;
+    
 }
 .article p{
+    width: 493px;
+    height: 99px;
     font-size:18px;
     font-weight: 400;
     line-height: 33px;
     margin-top: 47px;
     margin-bottom: 55px;
+    margin-right: 146px;
 }
 .article a{
     font-size: 18px;
@@ -67,24 +72,29 @@
     text-decoration: none;
     color: #6FBF44;
 }
+@media screen and (max-width: 560px){
+    
 
-@media screen and (max-width: 760px){
+    .button{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    
     .section{
         display: flex;
         flex-direction: column-reverse;
-        justify-items: center;
     }
-    .article{
-        margin: 76px 43px 0px 43px;
-        justify-items: center;
-        text-align: center;
-    }
+    
     .article h1{
         font-size: 30px;
         font-weight: 700;
         line-height: 30px;
         width: 278px;
         height: 60px;
+        text-align: center;
+        margin: 45px 141px 29px 141px;
     }
     .article p{
         font-size: 18px;
@@ -92,35 +102,39 @@
         line-height: 33px;
         width: 304px;
         height: 165px;
-        padding: 10px;
-        margin-top: 29px;
+        text-align: center;
+        margin: 0 129px 26px 127px;
     }
     .article a{
-        margin-top: 26px;
+        text-align:center;
+        margin: 0 22px 13px 220px ;
     }
     .image-logo img{
-        width: 312px;
+        text-align: center;
+        align-items: center;
+        width: 362.96px;
         height: 288px;
-        margin-top: 0;
-        margin-bottom: 22px;
-    }
-    .header{
-        width: 100%;
-    }
-    .button{
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 20px;
+        margin-top: 5px;
+        margin-bottom: 60px;
     }
     .nav{
         display: flex;
         overflow: hidden;
-        margin-top: 35px;
-        max-height: 0px;
+        margin-top: 50px;
+        max-height: 0;
         transition: max-height 0.3s ease-in-out;
     }
     .nav.ativo{
         max-height: 25px;
     }
-}
+
+    }
+
+
+
+
+
+
+
+
+
