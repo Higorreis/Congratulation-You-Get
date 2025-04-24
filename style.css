@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.header{
+    display: flex;
+    margin: 47px 0px 0px 42px;
+    margin-right: 32px;
+    align-items: center;
+}
+.nav a{
+    margin-right: 32px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight:400;
+    line-height: 21px;
+    text-align: center;
+    color: #17233D;
+}
+.button button{
+    width: 124px;
+    height: 51px;
+    padding: 14px 28px 14px 28px;
+    border-radius: 6px;
+    border: 1px solid #4CB538 ;
+    background: #6FBF44;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    
+}
+.section{
+    display: flex;
+    gap: 84.98px;
+}
+.image-logo img{
+    width: 595.18px;
+    height: 500px;
+    margin-left: 121px;
+    margin-top: 246px;
+    margin-bottom: 103.9px;
+}
+.article{
+    margin-top: 342px;
+    width: 493px;
+}
+.article h1{
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 82px;
+    color: #161A49;
+}
+.article p{
+    font-size:18px;
+    font-weight: 400;
+    line-height: 33px;
+    margin-top: 47px;
+    margin-bottom: 55px;
+}
+.article a{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #6FBF44;
+}
+
+@media screen and (max-width: 760px){
+    .section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-items: center;
+    }
+    .article{
+        margin: 76px 43px 0px 43px;
+        justify-items: center;
+        text-align: center;
+    }
+    .article h1{
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        width: 278px;
+        height: 60px;
+    }
+    .article p{
+        font-size: 18px;
+        font-weight:400;
+        line-height: 33px;
+        width: 304px;
+        height: 165px;
+        padding: 10px;
+        margin-top: 29px;
+    }
+    .article a{
+        margin-top: 26px;
+    }
+    .image-logo img{
+        width: 312px;
+        height: 288px;
+        margin-top: 0;
+        margin-bottom: 22px;
+    }
+    .header{
+        width: 100%;
+    }
+    .button{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+    .nav{
+        display: flex;
+        overflow: hidden;
+        margin-top: 35px;
+        max-height: 0px;
+        transition: max-height 0.3s ease-in-out;
+    }
+    .nav.ativo{
+        max-height: 25px;
+    }
+}
