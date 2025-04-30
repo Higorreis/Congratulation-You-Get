@@ -76,7 +76,7 @@ button:hover{
     position: relative;
     margin: 163px 85px 102px 121px;
 }
-@media screen and (max-width:820px) {
+@media screen and (max-width:1500px) {
     .header .nav{
         display: none;
     }
